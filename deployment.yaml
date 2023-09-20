@@ -15,8 +15,8 @@ spec:
     spec:
       initContainers:
         - name: migraciones
-          image: 132900311735.dkr.ecr.us-east-1.amazonaws.com/docker-giorgio:latest
+          image: 132900311735.dkr.ecr.us-east-1.amazonaws.com/giorgio-docker:latest
           command: ["python3", "manage.py", "migrate"]
       containers:
         - name: giorgio-contenedor
-          image: 132900311735.dkr.ecr.us-east-1.amazonaws.com/docker-giorgio:latest
+          image: 132900311735.dkr.ecr.us-east-1.amazonaws.com/giorgio-docker:latest
