@@ -13,10 +13,10 @@ spec:
   rules:
     - http:
         paths:
-          - path: /api-test/
+          - path: /
             pathType: Prefix
             backend:
               service:
-                name: api-test
+                name: cluster-ip-test
                 port:
                   number: 8000
